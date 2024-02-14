@@ -15,7 +15,7 @@ spec:
           workspace: work-dir
       params:
         - name: url
-          value: "https://github.com/google/docsy-example"
+          value: "https://github.com/shipit/hugotenberg.git"
         - name: subdirectory
           value: ""
         - name: deleteExisting
