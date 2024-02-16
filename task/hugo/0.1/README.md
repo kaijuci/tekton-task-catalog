@@ -30,10 +30,6 @@ kubectl apply -f https://raw.githubusercontent.com/tektoncd/catalog/main/task/hu
 
 - `output`: The directory where the generated site is located.
 
-## Platforms
-
-The Task can be run on `linux/amd64` platform.
-
 ## Usage
 
 ```
