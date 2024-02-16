@@ -12,6 +12,12 @@ metadata:
     tekton.dev/platforms: "linux/amd64"
 
 spec:
+  description: >-
+    A Task that builds a Hugo site.
+
+    This task uses the Hugo static site generator to build a static site from the
+    content in the specified directory.
+
   workspaces:
     - name: work-dir
 
