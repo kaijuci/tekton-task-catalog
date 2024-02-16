@@ -3,6 +3,13 @@ kind: Task
 
 metadata:
   name: hugo
+  labels:
+    app.kubernetes.io/version: "0.1"
+  annotations:
+    tekton.dev/pipelines.minVersion: "0.12.1"
+    tekton.dev/categories: Build Tools, Cloud
+    tekton.dev/tags: buildtools, cloud
+    tekton.dev/platforms: "linux/amd64"
 
 spec:
   workspaces:

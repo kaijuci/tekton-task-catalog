@@ -17,14 +17,14 @@ kubectl apply -f https://raw.githubusercontent.com/tektoncd/catalog/main/task/hu
 
 ## Parameters
 
-- `content-dir`: The directory where the content is located. Default: `""`
-- `minify`: Minify the output. Default: `false`
-- `base-url`: The base URL for the site. Default: `""`
-- `verbose`: Print verbose output. Default: `false`
+- **content-dir**: The directory where the content is located. (_default_: `""`)
+- **minify**: Minify the output. (_default_: `false`)
+- **base-url**: The base URL for the site. (_default_: `""`)
+- **verbose**: Print verbose output. (_default_: `false`)
 
 ## Workspaces
 
-- `work-dir`: The directory where `hugo` will be run. It should contain the `config.toml` file and the `content` and `layouts` directories.
+- **work-dir**: The directory where `hugo` will be run. It should contain the `config.toml` file and the `content` and `layouts` directories.
 
 ## Results
 
@@ -65,3 +65,7 @@ spec:
         - name: work-dir
           workspace: work-dir
 ```
+
+## Platforms
+
+The Task can be run on `linux/amd64` platform.
